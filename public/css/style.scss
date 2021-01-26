@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+:root {
+  --primary: #4f4160;
+  --light: #7b6c8d;
+  --dark: #261a36;
+  --pure: #ffffff;
+  --secondary: #7a5b93;
+  --black: #080015;
+  --white: #ecf0f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1;
+}
+
+header{
+  background: var(--primary);
+  padding: 1rem 0;
+
+  .container {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo{
+    text-transform: uppercase;
+    color: var(--pure);
+    font-weight: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .download button{
+     background: var(--secondary); 
+     border: none;
+     padding: 0.4rem 1rem;
+     color: var(--pure);
+     font-size: 14px;
+     border-radius: 4px;
+  }
+
+}
+
+.container .profile{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.6rem 0.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  background: var(--black);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+  padding-bottom: 2rem;
+
+  
+
+  .left{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .avatar_block{
+      img{
+        width: 128px;
+        height: 128px;
+        color: gainsboro;
+        border-radius: 50%;
+        border: 2px solid var(--pure);
+        object-fit: cover;
+    
+      }
+    }
+
+    .avatar_name{
+      margin-left: 10px;
+      h2{
+        color: var(--white);
+      }
+  
+      p{
+        color: gainsboro;
+      }
+    }
+
+   
+  }
+
+  .right{
+    flex: 1;
+    color: gainsboro;
+
+    .contact{
+
+      li{
+        list-style-type: none;
+        
+      }
+    }
+
+    .socials{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-top: 10px;
+
+      li{
+        list-style-type: none;
+        width: 32px;
+        height: 32px;
+        background: #ecf0f9;
+        padding: 1rem;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+      
+    }
+  }
+}
